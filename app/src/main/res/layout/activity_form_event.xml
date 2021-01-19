@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="checkInDto"
+            type="br.com.southsystem.eventsapp.remotedatasource.dto.CheckInDto" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:adjustViewBounds="true">
+
+        <EditText
+            android:id="@+id/activity_form_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/your_name"
+            android:text="@{checkInDto.name}"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/activity_form_event_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/your_email"
+            android:text="@{checkInDto.email}"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Events App</string>
+    <string name="checkin">Check-in</string>
+    <string name="confirm">Confirmar</string>
+    <string name="sharing">Compartilhamento</string>
+    <string name="share_with">Compartilhar com...</string>
+
+    <string name="your_name">Seu nome</string>
+    <string name="your_email">Seu e-mail</string>
+</resources>
